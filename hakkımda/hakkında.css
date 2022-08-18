@@ -1,5 +1,4 @@
-
-@media screen and (mas-width:800px){
+@media screen and (mas-width:600px){
     
 }
 .nav-item{
@@ -83,4 +82,9 @@ p{
 }
 .p{
     color: rgb(34, 23, 23);
+}
+.foot{
+    margin-top:3%;
+    position:fixed;
+    width: 80%;
 }
