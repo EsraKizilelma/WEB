@@ -1,6 +1,32 @@
-@media screen and (mas-width:600px){
-    
+.home-page--heading {
+    font-size: 2rem;
+  }
+  @media (min-width: 768px) {
+     th , td{
+        font-size: 1rem;
+     }
+  }
+h1, h2,h3{
+    font-size : 2em;
 }
+.fs-1 {
+    font-size: calc(1.375rem + 1.5vw)!important;
+ }
+ .fs-2 {
+    font-size: calc(1.325rem + .9vw)!important;
+ }
+ .fs-3 {
+    font-size: calc(1.3rem + .6vw)!important;
+ }
+ .fs-4 {
+    font-size: calc(1.275rem + .3vw)!important;
+ }
+ .fs-5 {
+    font-size: 1.25rem!important;
+ }
+ .fs-6 {
+    font-size: 1rem!important;
+ }
 .nav-item{
     padding-left: 6px;
 }

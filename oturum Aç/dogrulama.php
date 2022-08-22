@@ -24,11 +24,9 @@
           </a>   
         </div>
       </nav>
-    </div>
     <div>
     <?php 
     include("kullanicilar.php");
-
 
     if (($_POST["email"] == $username) and ($_POST["password"] == $password))
     {
@@ -41,19 +39,16 @@
     echo('<h1>Sisteme Giriş Başarılı</h1> <br>'.'<h3> HOŞGELDİNİZ Sayın </h3> "'. "<h2> $kullaniciAdi </h2>". '" <h3> Sisteme Giriş Başardınız </h3>');
     
     }
-    
     else 
     {
         echo '<h1>Başarısız Giriş</h1> <br>'. '<h3>Kullancı Adı veya Şifre Yanlış Girdiniz</h3> <br>';
         echo "<h3>Lütfen kontrol edip tekrar deneyin</h3>";
         header("Refresh: 1; url=oturumAc.html");
     }
-    
     ?>              
      <a href="oturumAc.html">
         <input type="button" class="btn btn-dark" value="Giriş Ekranına Geri Dön">
         </a>
-
     <a href="/hakkında.html">
         <input type="button" class="btn btn-dark" value="Ana Sayfaya Geri Dön">
     </a>
@@ -67,19 +62,16 @@
                       <p><a href="../ilgi alanlarım/İlgi Alanlarım.html" class="text-reset">İlgi Alanlarım</a></p>
                       <p><a href="../özgeçmiş/Özgeçmiş.html" class="text-reset">Özgeçmiş</a></p>            
                     </div>
-            
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                       <h6 class="text-uppercase fw-bold mb-4">Bizimle İletişime Geçin</h6>
                       <p><a href="../iletişim/İletişim.html" class="text-reset">iletişim</a></p>
                       <p><a href="../oturum Aç/oturumAc.html" class="text-reset">Oturum Aç</a></p>
                     </div>
-            
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                       <h6 class="text-uppercase fw-bold mb-4">şehrim</h6>
                       <p><a href="../şehrim/Şehrim.html" class="text-reset">Şehrim</a></p>
                       <p><a href="../mirasımız/Mirasımız.html" class="text-reset">Mirasımız</a></p>
                     </div>
-                    
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                       <h6 class="text-uppercase fw-bold mb-4">İLETİŞİM</h6>
                       <p><i class="fas fa-envelope me-3"></i>b211200400@sakarya.edu.tr</p>
