@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="iletişim.css">
-
+    <link rel="icon" href="../apple.png" type="image/x-icon"/>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../hakkımda/hakkında.css">
-    <title>İletişim</title>
+    <title>Basarili</title>
   </head>
   <body onload="koduret()">
     <header>
@@ -26,54 +26,43 @@
         </nav>
      </div>
     </header>
-      <form action="git.html" method="GET" onsubmit="return control()">
+    <main>
+      <script type="text/javascript">
+
+        function getParameterByName(name, url) 
+        {
+                if (!url) url = window.location.href;
+                 name = name.replace(/[\[\]]/g, '\\$&');
+                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+                 if (!results) return null;
+                 if (!results[2]) return '';
+                 return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            var name = getParameterByName('name');
+            var email = getParameterByName('email');
+            var message = getParameterByName('message');
+
+      </script>
         <div class="cntnr w-75 m-auto">
           <section class="sctn">
             <div class="baslikkutusu">Kişisel bilgiler</div>
             <table width="550">
               <tr>
                 <td width="150">Ad</td>
-                <td width="300"><input name="" id="ad" value="Adnızı Giriniz" onfocus="odaklan(this.id)" onblur="cikis(this.id,this.value)" type="text"></td>
+                <td width="300"><script>document.write(name);</script></td>
                 <td width="100"><span id="aduyari"></span></td>
               </tr>
               <tr>
-                <td>Soyad</td>
-                <td><input name="" id="soyad" value="Soyadınızı Giriniz" type="text" onfocus="odaklan(this.id)" onblur="cikis(this.id,this.value)"></td>
-                <td><span id="soyaduyari"></span></td>
-              </tr>
-              <tr>
-                <td>Doğum Tarihi</td>
-                <td><input name="" placeholder="Doğum Tarihinizi Giriniz" type="date"></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Telefon</td>               
-                <td> <input name="" id="telefon" type="text" pattern="[\(]\d{3}[\)] [\s] \d{3} [\s] \d{2} [\s] \d{2}" placeholder="(xxx) xxx xx xx"></td>
-                <td></td>
-              </tr>
-              <tr>
                 <td>Mail Adresi</td>                
-                <td><input name="email" id="email" value="Mailinizi Giriniz" type="email"></td>
-                <td><span id="emailuyari"></span></td>
-              </tr>
-              <tr>
-                <td>Cinsiyet</td>                
-                <td class="siyah"> 
-                  <input id="erkek" name="cinsiyet" type="radio" class="radio" value="Erkek" onclick="askerlikdurumu('erkek')" >Erkek
-                  <input id="kadin" name="cinsiyet" type="radio" class="radio" value="Kadın" onclick="askerlikdurumu('kadin')" >Kadın
-                  <input id="askerlik" name="askerlik" type="hidden" value="" placeholder="Askerlik Durumunu Giriniz" >
-                  <td></td>
-                </td>
+                <td><script>document.write(email);</script></td>
               </tr>
             </table>
-          <footer class="footer">
             <div class="baslikkutusu">Düşünceleriniz</div>
-            <textarea maxlength="100" onchange="myFunction()"></textarea><br><br>
-            <button>Gönder</button>
-            <input class="gonder" name="" type="reset" onclick="kapat()" onclick="islem()">
-          </footer>
+            <script>document.write(message);</script><br><br>
         </div>
-      </form>
+    </main>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <footer class="bg-warning p-2">
@@ -108,6 +97,6 @@
           <a class="text-reset fw-bold" href="https://KIZILELMA.com/">KIZILELMA</a>
         </div>
       </footer>
-    <script src="iletişim.js"></script>
+      
   </body>
 </html>
